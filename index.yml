@@ -1,8 +1,8 @@
 layout: layouts/landing.njk
-title: Ryuk IT
-description: Full Stack and Cloud Native
+title: Kieran Rimmer
+description: IT Professional
 header:
-  title: Delivery as a <span>Professional</span> Service 
+  title: Welcome to <span>Kieran Rimmer</span>'s Website 
 
 # install:
 #   title: "Run the following to [setup Lume](./docs/overview/installation.md):"
@@ -223,17 +223,20 @@ features:
     img: /icons/stack.svg
     description: Handling all phases of application lifecycle across all major vendors and runtimes. No tech stack is too boutique.
 
-  - title: Architecture and advisory
+  - title: Hunger for Learning
     img: /icons/graduate.svg
-    description: Having trouble defining the solution or even the problem statement?  We've been there and we can help.
+    description: |
+      I love learning, and you never know who the next teacher will be.
 
-  - title: Deploy anywhere
+  - title: Anywhere, any time, any tech
     img: /icons/globe.svg
-    description: We are cloud native and well versed in the finer detail of making things just work.
+    description: Technology agnostic and pragmatic.
 
-  - title: Prepare for Departure
+  - title: Still learning to fly, but flying a lot.
     img: /icons/plane.svg
-    description: We deliver extensible software, with handover and documentation provided as standard. 
+    description: |
+      Want to chat on some problem domain where you think I
+      can help?  Use the contact details :)
 
 # examples:
 #   title: Who is using Lume?

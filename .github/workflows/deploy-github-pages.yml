@@ -3,7 +3,7 @@ name: Publish on GitHub Pages
 on:
   push:
     branches:
-      - deploy/ryukit
+      - deploy/kieranrimmer
 
 permissions:
   contents: read

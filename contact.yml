@@ -1,23 +1,16 @@
 layout: layouts/contact.njk
-title: Contact Us
+title: Contact Me
 main_menu: contact
-email: info@ryukit.com
+email: krimmer@ryukit.com
 phone: '+61432919418'
 offices:
-  - name: NSW
+  - name: Snail mail
     address: | 
       Unit 37
       414-418 Pitt Street
       Haymarket
       NSW
       2000
-      Australia
-  - name: VIC
-    address: | 
-      5 Baxter Street
-      Eltham
-      VIC
-      3095
       Australia
 
 # sites:
