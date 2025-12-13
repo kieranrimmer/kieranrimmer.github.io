@@ -7,7 +7,7 @@ description: >
   and AI-assisted observability and active monitoring.
 
 sections:
-  - heading: __stackql__ — Querying the Internet as a Relational Database
+  - heading: stackql — Querying the Internet as a Relational Database
     body: >
       `stackql` is an open-source query engine that treats cloud, SaaS and other APIs
       as relational data sources, enabling analytics, automation, and AI-driven
@@ -24,7 +24,7 @@ sections:
       - label: Documentation
         href: https://stackql.io
 
-  - heading: White Paper - __stackql__ + AI — Enterprise Operations Manager
+  - heading: White Paper - stackql + AI — Enterprise Operations Manager
     body: >
       The AI Enterprise Operations Manager extends StackQL with an agent-based cognition loop
       (plan → execute → summarise) for monitoring and operational workflows

@@ -15,7 +15,7 @@
 /* Header */
 
 .portfolio-header {
-  max-width: 700px;
+  max-width: 620px;
   margin: 0 auto;
   text-align: center;
 
@@ -37,10 +37,23 @@
 /* Sections */
 
 .portfolio-section {
-  max-width: var(--max-width);
+  max-width: 680px;
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (max-width: 720px) {
+  .portfolio-header,
+  .portfolio-section {
+    max-width: 100%;
+  }
+
+  .portfolio-header p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 
 .portfolio-section h2 {
   font: var(--text-title);
