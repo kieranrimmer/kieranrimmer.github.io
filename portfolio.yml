@@ -1,6 +1,6 @@
 title: Portfolio — Kieran Rimmer
-url: /portfolio/
-layout: portfolio.njk
+main_menu: portfolio
+layout: layouts/portfolio.njk
 
 description: >
   Senior solution architect and backend engineer focused on distributed systems, query engines,
