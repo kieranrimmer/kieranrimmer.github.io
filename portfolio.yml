@@ -23,6 +23,10 @@ sections:
         href: https://github.com/stackql
       - label: Documentation
         href: https://stackql.io
+    images:
+      - label: stackql
+        src: /stackql-avatar-logo.png
+        alt: stackql logo
 
   - heading: White Paper - stackql + AI — Enterprise Operations Manager
     body: >
@@ -33,7 +37,7 @@ sections:
       - label: Architecture white paper (PDF)
         href: /generic-stackql-ai-cloud-architecture.pdf
 
-  - heading: Presentation to [Google DevFest Kathmandu 2025](https://gdg.community.dev/events/details/google-gdg-kathmandu-presents-devfest-kathmandu-2025/)
+  - heading: Presentation to Google DevFest Kathmandu 2025
     body: >
       I was thrilled and humbled to accept an invitation to present at [DevFest Kathmandu 2025](https://gdg.community.dev/events/details/google-gdg-kathmandu-presents-devfest-kathmandu-2025/)
       My presentation focussed on `stackql` fundamentals and AI use cases, in the context of Google

@@ -23,6 +23,24 @@ page_css: portfolio.css
       {% endfor %}
     </ul>
     {% endif %}
+    {% if section.images and section.images.length %}
+    <ul class="portfolio-images">
+      {% for img in section.images %}
+        <li class="portfolio-image">
+          <figure>
+            <img
+              src="{{ img.src }}"
+              alt="{{ img.alt or img.label }}"
+              loading="lazy"
+            >
+            {% if img.label %}
+              <figcaption>{{ img.label }}</figcaption>
+            {% endif %}
+          </figure>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
   </section>
   {% endfor %}
 </main>
