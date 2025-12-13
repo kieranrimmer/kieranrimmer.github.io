@@ -1,0 +1,28 @@
+---
+layout: ./base.njk
+page_css: portfolio.css
+---
+
+<main class="portfolio">
+  <header class="portfolio-header">
+    <h1>{{ title }}</h1>
+    {{ description | md | safe }}
+  </header>
+
+  {% for section in sections %}
+  <section class="portfolio-section">
+    <h2>{{ section.heading }}</h2>
+    {{ section.body | md | safe }}
+
+    {% if section.links %}
+    <ul class="portfolio-links">
+      {% for link in section.links %}
+      <li>
+        <a href="{{ link.href }}">{{ link.label }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </section>
+  {% endfor %}
+</main>

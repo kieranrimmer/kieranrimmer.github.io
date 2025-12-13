@@ -1,0 +1,49 @@
+title: Portfolio — Kieran Rimmer
+url: /portfolio/
+layout: portfolio.njk
+
+description: >
+  Senior solution architect and backend engineer focused on distributed systems, query engines,
+  and AI-assisted observability and active monitoring.
+
+sections:
+  - heading: __stackql__ — Querying the Internet as a Relational Database
+    body: >
+      `stackql` is an open-source query engine that treats cloud, SaaS and other APIs
+      as relational data sources, enabling analytics, automation, and AI-driven
+      monitoring using SQL.
+
+      I am both a co-founder and leading architect and engineer on the project.
+
+      Key technical challenges include heterogeneous schema normalization,
+      query planning over remote APIs, streaming results, and robust error
+      semantics at internet scale.
+    links:
+      - label: GitHub
+        href: https://github.com/stackql
+      - label: Documentation
+        href: https://stackql.io
+
+  - heading: White Paper - __stackql__ + AI — Enterprise Operations Manager
+    body: >
+      The AI Enterprise Operations Manager extends StackQL with an agent-based cognition loop
+      (plan → execute → summarise) for monitoring and operational workflows
+      in cloud-native environments.
+    links:
+      - label: Architecture white paper (PDF)
+        href: /generic-stackql-ai-cloud-architecture.pdf
+
+  - heading: Presentation to [Google DevFest Kathmandu 2025](https://gdg.community.dev/events/details/google-gdg-kathmandu-presents-devfest-kathmandu-2025/)
+    body: >
+      I was thrilled and humbled to accept an invitation to present at [DevFest Kathmandu 2025](https://gdg.community.dev/events/details/google-gdg-kathmandu-presents-devfest-kathmandu-2025/)
+      My presentation focussed on `stackql` fundamentals and AI use cases, in the context of Google
+      Cloud Platform.
+    links:
+      - label: Presentation Slides (PDF)
+        href: /submission-01-StackQL-Kathmandu-DevFest-2025.pdf
+
+  - heading: What I’m Looking For
+    body: >
+      Senior roles focused on infrastructure,
+      data platforms, and developer tooling—especially where reliability,
+      scale, and operational clarity matter.
