@@ -22,6 +22,7 @@
   & h1 {
     font: var(--text-display);
     letter-spacing: var(--text-display-spacing);
+    text-align: center;
     color: var(--color-primary);
     margin: 0;
   }
@@ -30,6 +31,7 @@
     font: var(--text-body);
     letter-spacing: var(--text-body-spacing);
     color: var(--color-foreground-1);
+    text-align: center;
     margin: var(--row-gap-0) 100px 0;
   }
 }
@@ -42,24 +44,15 @@
   margin-right: auto;
 }
 
-@media (max-width: 720px) {
-  .portfolio-header,
-  .portfolio-section {
-    max-width: 100%;
-  }
-
-  .portfolio-header p {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-
 .portfolio-section h2 {
   font: var(--text-title);
   letter-spacing: var(--text-title-spacing);
   margin: 0 0 var(--row-gap-0);
   color: var(--color-foreground-0);
+}
+
+.portfolio-section p {
+  margin: 0.5em 0;
 }
 
 .portfolio-section p,
@@ -88,12 +81,27 @@
 .portfolio-links a {
   font: var(--text-body);
   letter-spacing: var(--text-body-spacing);
+  font-weight: 500;
 }
 
-/* Optional: subtle section separation */
+/* Subtle section separation */
 
 .portfolio-section + .portfolio-section {
-  margin-top: var(--row-gap-1);
-  padding-top: var(--row-gap-1);
+  margin-top: var(--row-gap-0);
+  padding-top: var(--row-gap-0);
   border-top: 1px solid var(--color-border-subtle);
+}
+
+/* Mobile / narrow window */
+
+@media (max-width: 720px) {
+  .portfolio-header,
+  .portfolio-section {
+    max-width: 100%;
+  }
+
+  .portfolio-header p {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
