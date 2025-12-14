@@ -3,61 +3,76 @@ main_menu: portfolio
 layout: layouts/portfolio.njk
 
 description: >
-  Senior solution architect and backend engineer focused on distributed systems, query engines,
-  and AI-assisted observability and active monitoring.
+  Senior backend engineer and solution architect specialising in distributed systems,
+  large-scale query engines, and AI-assisted observability and active monitoring.
+  Available for senior roles and selective consulting engagements.
 
 sections:
-  - heading: stackql — Querying the Internet as a Relational Database
+  - heading: StackQL — Large-scale Query Engine for Cloud & SaaS APIs
     body: >
-      `stackql` is an open-source query engine that treats cloud, SaaS and other APIs
+      **StackQL** is an open-source query engine that treats cloud, SaaS, and other APIs
       as relational data sources, enabling analytics, automation, and AI-driven
       monitoring using SQL.
 
-      I am both a co-founder and leading architect and engineer on the project.
+      I am a **co-founder** and the **leading architect and engineer** on the project.
 
       Key technical challenges include heterogeneous schema normalization,
-      query planning over remote APIs, streaming results, and robust error
-      semantics at internet scale.
+      query planning and execution over remote APIs, streaming result sets,
+      and robust error semantics at internet scale.
     links:
       - label: GitHub
         href: https://github.com/stackql
       - label: Documentation
         href: https://stackql.io
     images:
-      - label: stackql logo
+      - label: StackQL
         src: /stackql-avatar-logo.png
-        maxWidth: 150px
-        alt: stackql logo
+        alt: StackQL logo
 
-  - heading: White Paper - stackql + AI — Enterprise Operations Manager
+  - heading: StackQL + AI — Enterprise Operations Manager (White Paper)
     body: >
-      The AI Enterprise Operations Manager extends StackQL with an agent-based cognition loop
-      (plan → execute → summarise) for monitoring and operational workflows
-      in cloud-native environments.
+      The **AI Enterprise Operations Manager** extends StackQL with an agent-based
+      cognition loop (**plan → execute → summarise**) for monitoring and operational
+      workflows in cloud-native environments.
+
+      The paper outlines system architecture, agent control flow, and integration
+      points for reliability and operational insight.
     links:
       - label: Architecture white paper (PDF)
         href: /generic-stackql-ai-cloud-architecture.pdf
 
-  - heading: Presentation to Google DevFest Kathmandu 2025
+  - heading: Public Speaking — Google DevFest Kathmandu 2025
     body: >
-      I was thrilled and humbled to accept an invitation to present at [DevFest Kathmandu 2025](https://gdg.community.dev/events/details/google-gdg-kathmandu-presents-devfest-kathmandu-2025/)
-      My presentation focussed on `stackql` fundamentals and AI use cases, in the context of Google
-      Cloud Platform.
+      I was invited to present at
+      [DevFest Kathmandu 2025](https://gdg.community.dev/events/details/google-gdg-kathmandu-presents-devfest-kathmandu-2025/),
+      where I spoke on **StackQL fundamentals** and **AI use cases** in the context of
+      Google Cloud Platform.
+
+      The talk focused on practical system design, API-driven data access,
+      and operational use cases.
     links:
       - label: Presentation Slides (PDF)
         href: /submission-01-StackQL-Kathmandu-DevFest-2025.pdf
 
+  - heading: How I Help Teams
+    body: >
+      I help teams design, build, and operate complex backend systems, particularly where
+      correctness, scale, and operational clarity matter.
+
+        - Distributed backend and platform systems
+        - Query engines, data platforms, and API-centric architectures
+        - Reliability, correctness, and failure semantics
+        - Prototyping and productionising AI-assisted workflows
+
   - heading: What I’m Looking For
     body: >
-      Senior roles focused on any of: 
+      **Roles**  
+      Senior / Staff backend, platform, or infrastructure roles focused on
+      systems-level problem solving and long-term maintainability.
 
-        - application delivery.
-        - infrastructure,
-        - data platforms.
-        - shared tooling.
-        
-      Especially where reliability,
-      scale, and operational clarity matter.
+      **Consulting**  
+      Selective short- to medium-term engagements involving distributed systems,
+      data or query platforms, and AI-assisted operational tooling.
     links:
       - label: Download CV (PDF)
         href: /Technical_CV_Kieran_Rimmer.pdf
