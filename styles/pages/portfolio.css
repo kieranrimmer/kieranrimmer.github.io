@@ -114,12 +114,15 @@
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: var(--column-gap-1);
   justify-items: center;
+  align-items: start;
 }
 
 .portfolio-image {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-self: center;
+  text-align: center;
 }
 
 .portfolio-image.portrait img {
@@ -132,7 +135,11 @@
 
 .portfolio-image figure {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 
 .portfolio-image img {
   width: 100%;
