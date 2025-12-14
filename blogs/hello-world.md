@@ -3,6 +3,7 @@ title: Hello, blog
 date: 2025-12-14
 summary: First post. Replace me.
 type: blog
+search: true
 ---
 
 This is a sample post to prove the pipeline works.
