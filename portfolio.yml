@@ -50,7 +50,7 @@ sections:
   - heading: What I’m Looking For
     body: >
       Senior roles focused on any of: 
-      
+
         - application delivery.
         - infrastructure,
         - data platforms.
@@ -58,3 +58,6 @@ sections:
         
       Especially where reliability,
       scale, and operational clarity matter.
+    links:
+      - label: Download CV (PDF)
+        href: /Technical_CV_Kieran_Rimmer.pdf
