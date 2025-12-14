@@ -2,14 +2,14 @@
 layout: layouts/base.njk
 ---
 
-<article class="page">
-  <header class="page-header">
+<article class="portfolio">
+  <header class="portfolio-header">
     <h1>{{ title }}</h1>
 
     {% if description %}
-      <div class="page-content prose">
+      <p>
         {{ description | md | safe }}
-      </div>
+      </p>
     {% endif %}
   </header>
 
@@ -18,30 +18,37 @@ layout: layouts/base.njk
       <section class="portfolio-section">
         <h2>{{ section.heading }}</h2>
 
-        <div class="page-content portfolio-content">
-          {% if section.body %}
-            <div class="portfolio-body prose">
-              {{ section.body | md | safe }}
-            </div>
-          {% endif %}
-
-          {% if section.images %}
-            <div class="portfolio-images">
-              {% for image in section.images %}
-                <img
-                  src="{{ image.src }}"
-                  alt="{{ image.alt or '' }}"
-                  style="{% if image.maxWidth %}max-width: {{ image.maxWidth }};{% endif %}"
-                />
-              {% endfor %}
-            </div>
-          {% endif %}
-        </div>
+        {% if section.body %}
+          {{ section.body | md | safe }}
+        {% endif %}
 
         {% if section.links %}
           <ul class="portfolio-links">
             {% for link in section.links %}
-              <li><a href="{{ link.href }}">{{ link.label }}</a></li>
+              <li>
+                <a href="{{ link.href }}">{{ link.label }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        {% if section.images %}
+          <ul class="portfolio-images">
+            {% for image in section.images %}
+              <li class="portfolio-image">
+                <figure>
+                  <img
+                    src="{{ image.src }}"
+                    alt="{{ image.alt or '' }}"
+                    {% if image.maxWidth %}
+                      style="max-width: {{ image.maxWidth }};"
+                    {% endif %}
+                  />
+                  {% if image.label %}
+                    <figcaption>{{ image.label }}</figcaption>
+                  {% endif %}
+                </figure>
+              </li>
             {% endfor %}
           </ul>
         {% endif %}
