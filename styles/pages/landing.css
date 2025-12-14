@@ -11,6 +11,10 @@
   gap: var(--column-gap-2);
 }
 
+.landing-gallery-items {
+  grid-template-columns: 1fr;
+}
+
 .landing-gallery-figure {
   margin: 0;
   background: var(--color-background-1);
