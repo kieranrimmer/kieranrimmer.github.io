@@ -62,10 +62,10 @@ sections:
         src: /speaker_action.jpg
         alt: stackql in Kathmandu (courtesy GDG Kathmandu)
         orientation: portrait
-      - label: stackql vision in Nepal
-        src: /mountain_vision.jpg
-        alt: stackql vision in Nepal
-        orientation: landscape
+      # - label: stackql vision in Nepal
+      #   src: /mountain_vision.jpg
+      #   alt: stackql vision in Nepal
+      #   orientation: landscape
 
   - heading: How I Help Teams
     body: |
