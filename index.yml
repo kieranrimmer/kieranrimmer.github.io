@@ -3,6 +3,12 @@ title: Kieran Rimmer
 url: /
 page_css: landing.css
 
+blurb: |
+  Senior backend engineer and solution architect specialising in distributed systems,
+  large-scale query engines, and AI-assisted observability.
+  **[Contact me](/contact/)**
+
+
 gallery:
   title: Highlights
   items:

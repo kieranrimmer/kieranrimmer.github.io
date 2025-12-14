@@ -3,6 +3,12 @@ layout: ./base.njk
 page_css: landing.css
 ---
 
+{% if blurb %}
+<section class="landing-blurb">
+  {{ blurb | md | safe }}
+</section>
+{% endif %}
+
 {% if gallery %}
 <section class="landing-gallery">
   <header class="landing-gallery-header">
