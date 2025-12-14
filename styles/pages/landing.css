@@ -39,3 +39,8 @@
   color: var(--color-foreground-1);
   text-align: center;
 }
+
+.landing-gallery-figure {
+  margin-left: auto;
+  margin-right: auto;
+}
