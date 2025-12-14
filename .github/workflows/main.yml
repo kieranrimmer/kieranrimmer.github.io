@@ -1,4 +1,6 @@
 name: Publish on GitHub Pages
+environment: 
+  name: github-pages
 
 on: [push]
 
