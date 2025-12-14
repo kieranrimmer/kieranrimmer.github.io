@@ -9,6 +9,7 @@ import minifyHTML from "lume/plugins/minify_html.ts";
 import lightningCss from "lume/plugins/lightningcss.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import toc from "https://deno.land/x/lume_markdown_plugins@v0.1.0/toc/mod.ts";
+import search from "lume/plugins/search.ts";
 
 const markdown = {
   plugins: [toc],
@@ -39,6 +40,7 @@ site
   .use(postcss())
   .use(lightningCss())
   .use(inline())
+  .use(search())
   .use(esbuild({
     extensions: [".js"],
   }))
