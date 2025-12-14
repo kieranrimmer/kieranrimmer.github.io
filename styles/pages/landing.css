@@ -56,7 +56,7 @@
 .landing-blurb {
   max-width: 42em;
   margin: 0 auto var(--row-gap-1);
-  text-align: center;
+  /* text-align: center; */
   font: var(--text-body);
   color: var(--color-foreground-1);
 }
