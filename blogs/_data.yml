@@ -1,0 +1,5 @@
+# Applies default data to all pages under /blogs/**
+# (Works in Lume when directory data files are enabled.)
+layout: layouts/blog_post.njk
+main_menu: blogs
+type: blog

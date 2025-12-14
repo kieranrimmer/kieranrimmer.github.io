@@ -1,0 +1,38 @@
+---
+layout: layouts/base.njk
+page_css: blogs.css
+---
+
+<main class="blogs">
+  <header class="blogs-header">
+    <h1>{{ title }}</h1>
+    {% if description %}
+      {{ description | md | safe }}
+    {% endif %}
+  </header>
+
+  {# Lume Search plugin pattern: search.pages(query, sort) #}
+  {% set posts = search.pages("type=blog", "date=desc") %}
+
+  {% if posts and posts.length %}
+    <ul class="blogs-list">
+      {% for p in posts %}
+        {% if p.url != "/blogs/" %}
+        <li class="blogs-item">
+          <a class="blogs-link" href="{{ p.url }}">
+            <span class="blogs-title">{{ p.title }}</span>
+            {% if p.date %}
+              <time class="blogs-date" datetime="{{ p.date }}">{{ p.date }}</time>
+            {% endif %}
+          </a>
+          {% if p.summary %}
+            <p class="blogs-summary">{{ p.summary }}</p>
+          {% endif %}
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="blogs-empty">No posts yet. Add a markdown file anywhere under <code>blogs/</code>.</p>
+  {% endif %}
+</main>

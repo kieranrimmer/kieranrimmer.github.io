@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+page_css: blog.css
+---
+
+<main class="blog">
+  <header class="blog-header">
+    <h1>{{ title }}</h1>
+    {% if date %}
+      <time class="blog-date" datetime="{{ date }}">{{ date }}</time>
+    {% endif %}
+    {% if summary %}
+      <p class="blog-summary">{{ summary }}</p>
+    {% endif %}
+  </header>
+
+  <article class="blog-body">
+    {{ content | safe }}
+  </article>
+</main>

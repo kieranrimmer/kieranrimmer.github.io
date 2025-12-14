@@ -1,0 +1,64 @@
+.blog {
+  display: grid;
+  row-gap: var(--row-gap-2);
+  column-gap: var(--margin);
+  grid-template-columns: 0 minmax(0, var(--max-width)) 0;
+  padding-top: var(--row-gap-2);
+  padding-bottom: var(--row-gap-2);
+
+  & > * { grid-column: 2; }
+}
+
+.blog-header {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+
+  & h1 {
+    font: var(--text-display);
+    letter-spacing: var(--text-display-spacing);
+    color: var(--color-primary);
+    margin: 0;
+  }
+}
+
+.blog-date {
+  display: inline-block;
+  margin-top: 0.5em;
+  font: var(--text-body);
+  letter-spacing: var(--text-body-spacing);
+  color: var(--color-foreground-2);
+}
+
+.blog-summary {
+  margin: 0.75em auto 0;
+  max-width: 620px;
+  font: var(--text-body);
+  letter-spacing: var(--text-body-spacing);
+  color: var(--color-foreground-1);
+}
+
+.blog-body {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  font: var(--text-body);
+  letter-spacing: var(--text-body-spacing);
+  color: var(--color-foreground-1);
+}
+
+.blog-body h2 {
+  font: var(--text-title);
+  letter-spacing: var(--text-title-spacing);
+  margin-top: 1.4em;
+  color: var(--color-foreground-0);
+}
+
+.blog-body pre,
+.blog-body code {
+  font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+}
+
+@media (max-width: 720px) {
+  .blog-summary { max-width: 100%; }
+}
