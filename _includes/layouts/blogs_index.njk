@@ -12,7 +12,14 @@ page_css: blogs.css
   </header>
 
   {# Lume Search plugin pattern: search.pages(query, sort) #}
-  {% set posts = search.pages("type=blog", "date=desc") %}
+  {% set all = search.pages("", "url=asc") %}
+  {% set posts = [] %}
+  {% for p in all %}
+    {% if p.url and p.url.startsWith("/blogs/") and p.url != "/blogs/" %}
+      {% set posts = posts.concat([p]) %}
+    {% endif %}
+  {% endfor %}
+
 
   {% if posts and posts.length %}
     <ul class="blogs-list">
