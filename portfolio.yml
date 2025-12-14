@@ -1,5 +1,6 @@
 title: Portfolio — Kieran Rimmer
 main_menu: portfolio
+url: /portfolio/
 layout: layouts/portfolio.njk
 
 description: |
@@ -27,6 +28,7 @@ sections:
     images:
       - label: stackql
         src: /stackql-avatar-logo.png
+        maxWidth: 200px
         alt: stackql logo
 
   - heading: stackql + AI — Enterprise Operations Manager (White Paper)
@@ -40,6 +42,11 @@ sections:
     links:
       - label: Architecture white paper (PDF)
         href: /generic-stackql-ai-cloud-architecture.pdf
+    images:
+      - label: stackql AI architecture
+        src: /crude-design-figure.png
+        maxWidth: 600px
+        alt: stackql AI architecture
 
   - heading: Public Speaking — Google DevFest Kathmandu 2025
     body: |
@@ -53,6 +60,15 @@ sections:
     links:
       - label: Presentation Slides (PDF)
         href: /submission-01-stackql-Kathmandu-DevFest-2025.pdf
+    images:
+      - label: stackql in Kathmandu
+        src: /kathmandu_skyline.jpg
+        maxWidth: 200px
+        alt: stackql in Kathmandu
+      - label: stackql in Nepal
+        src: /nepal_country.jpg
+        maxWidth: 200px
+        alt: stackql in Nepal
 
   - heading: How I Help Teams
     body: |

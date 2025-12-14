@@ -1,5 +1,6 @@
 title: Blogs
 main_menu: blogs
+url: /blogs/
 layout: layouts/blogs_index.njk
 description: >
   Short, technical notes and write-ups. Mostly systems, query engines,
