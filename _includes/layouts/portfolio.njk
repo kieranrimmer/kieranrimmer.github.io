@@ -1,41 +1,48 @@
 ---
 layout: layouts/base.njk
-title: Blogs
-main_menu: blogs
 ---
 
-<main class="blogs">
-  <header class="blogs-header">
-    <h1>Blogs</h1>
-    <p>
-      Short, technical notes and write-ups. Mostly systems,
-      query engines, and stackql / stackql-ai.
-    </p>
+<article class="page page-portfolio">
+  <header class="page-header">
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="page-description">{{ page.description }}</p>
+    {% endif %}
   </header>
 
-  {% set posts = [] %}
-  {% for p in pages %}
-    {% if p.url and p.url.startsWith("/blogs/") and p.url != "/blogs/" %}
-      {% set posts = posts.concat([p]) %}
-    {% endif %}
-  {% endfor %}
+  {% if page.sections %}
+    {% for section in page.sections %}
+      <section class="portfolio-section">
+        <h2>{{ section.heading }}</h2>
 
-  {% if posts.length == 0 %}
-    <p class="blogs-empty">
-      No posts yet. Add a markdown file anywhere under <code>blogs/</code>.
-    </p>
-  {% else %}
-    <ul class="blogs-list">
-      {% for post in posts | sort(attribute="date") | reverse %}
-        <li class="blogs-item">
-          <a href="{{ post.url }}">{{ post.title }}</a>
-          {% if post.date %}
-            <time datetime="{{ post.date | date('yyyy-MM-dd') }}">
-              {{ post.date | date('d MMM yyyy') }}
-            </time>
-          {% endif %}
-        </li>
-      {% endfor %}
-    </ul>
+        {% if section.body %}
+          <div class="portfolio-body">
+            {{ section.body | safe }}
+          </div>
+        {% endif %}
+
+        {% if section.links %}
+          <ul class="portfolio-links">
+            {% for link in section.links %}
+              <li>
+                <a href="{{ link.href }}">{{ link.label }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        {% if section.images %}
+          <div class="portfolio-images">
+            {% for image in section.images %}
+              <img
+                src="{{ image.src }}"
+                alt="{{ image.alt | default('') }}"
+                style="{% if image.maxWidth %}max-width: {{ image.maxWidth }};{% endif %}"
+              />
+            {% endfor %}
+          </div>
+        {% endif %}
+      </section>
+    {% endfor %}
   {% endif %}
-</main>
+</article>
