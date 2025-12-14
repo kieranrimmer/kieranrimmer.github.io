@@ -24,7 +24,7 @@ sections:
       - label: Documentation
         href: https://stackql.io
     images:
-      - label: stackql
+      - label: stackql logo
         src: /stackql-avatar-logo.png
         maxWidth: 150px
         alt: stackql logo
