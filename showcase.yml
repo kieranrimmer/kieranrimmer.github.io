@@ -1,5 +1,6 @@
 layout: layouts/showcase.njk
 title: Showcase
+url: /showcase/
 main_menu: showcase
 description: |
   This is a list of sites built with Lume. If you want to include your project in this list, please
