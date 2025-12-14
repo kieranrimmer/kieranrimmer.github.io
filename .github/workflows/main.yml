@@ -1,6 +1,4 @@
 name: Publish on GitHub Pages
-environment: 
-  name: github-pages
 
 on: [push]
 
@@ -12,6 +10,8 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
 
     steps:
       - name: Clone repository
