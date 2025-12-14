@@ -8,9 +8,9 @@ description: >
   Available for senior roles and selective consulting engagements.
 
 sections:
-  - heading: StackQL — Large-scale Query Engine for Cloud & SaaS APIs
+  - heading: stackql — Large-scale Query Engine for Cloud & SaaS APIs
     body: >
-      **StackQL** is an open-source query engine that treats cloud, SaaS, and other APIs
+      **stackql** is an open-source query engine that treats cloud, SaaS, and other APIs
       as relational data sources, enabling analytics, automation, and AI-driven
       monitoring using SQL.
 
@@ -25,13 +25,13 @@ sections:
       - label: Documentation
         href: https://stackql.io
     images:
-      - label: StackQL
+      - label: stackql
         src: /stackql-avatar-logo.png
-        alt: StackQL logo
+        alt: stackql logo
 
-  - heading: StackQL + AI — Enterprise Operations Manager (White Paper)
+  - heading: stackql + AI — Enterprise Operations Manager (White Paper)
     body: >
-      The **AI Enterprise Operations Manager** extends StackQL with an agent-based
+      The **AI Enterprise Operations Manager** extends stackql with an agent-based
       cognition loop (**plan → execute → summarise**) for monitoring and operational
       workflows in cloud-native environments.
 
@@ -45,14 +45,14 @@ sections:
     body: >
       I was invited to present at
       [DevFest Kathmandu 2025](https://gdg.community.dev/events/details/google-gdg-kathmandu-presents-devfest-kathmandu-2025/),
-      where I spoke on **StackQL fundamentals** and **AI use cases** in the context of
+      where I spoke on **stackql fundamentals** and **AI use cases** in the context of
       Google Cloud Platform.
 
       The talk focused on practical system design, API-driven data access,
       and operational use cases.
     links:
       - label: Presentation Slides (PDF)
-        href: /submission-01-StackQL-Kathmandu-DevFest-2025.pdf
+        href: /submission-01-stackql-Kathmandu-DevFest-2025.pdf
 
   - heading: How I Help Teams
     body: >
