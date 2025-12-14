@@ -1,6 +1,7 @@
 layout: layouts/contact.njk
 title: Contact Me
 main_menu: contact
+url: /contact/
 email: krimmer@ryukit.com
 phone: '+61432919418'
 offices:
