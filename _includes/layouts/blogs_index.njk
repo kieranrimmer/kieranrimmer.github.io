@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: ./base.njk
 page_css: blogs.css
 ---
 
@@ -13,18 +13,19 @@ page_css: blogs.css
 
   {# Lume Search plugin pattern: search.pages(query, sort) #}
   {% set all = search.pages("", "url=asc") %}
-  {% set posts = [] %}
+
+  {# IMPORTANT: use a namespace so assignments persist outside the loop #}
+  {% set ns = namespace(posts=[]) %}
   {% for p in all %}
     {% if p.url and p.url.startsWith("/blogs/") and p.url != "/blogs/" %}
-      {% set posts = posts.concat([p]) %}
+      {% set ns.posts = ns.posts.concat([p]) %}
     {% endif %}
   {% endfor %}
-
+  {% set posts = ns.posts %}
 
   {% if posts and posts.length %}
     <ul class="blogs-list">
       {% for p in posts %}
-        {% if p.url != "/blogs/" %}
         <li class="blogs-item">
           <a class="blogs-link" href="{{ p.url }}">
             <span class="blogs-title">{{ p.title }}</span>
@@ -36,7 +37,6 @@ page_css: blogs.css
             <p class="blogs-summary">{{ p.summary }}</p>
           {% endif %}
         </li>
-        {% endif %}
       {% endfor %}
     </ul>
   {% else %}
