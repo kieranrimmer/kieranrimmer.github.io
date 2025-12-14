@@ -11,19 +11,12 @@ page_css: blogs.css
     {% endif %}
   </header>
 
-  {# collect pages safely #}
-  {% set ns = namespace(posts=[]) %}
-  {% for p in search.pages() %}
-    {% if p.url is string %}
-      {% if p.url | slice(0, 7) == "/blogs/" and p.url != "/blogs/" %}
-        {% set ns.posts = ns.posts.concat([p]) %}
-      {% endif %}
-    {% endif %}
-  {% endfor %}
+  {# Let Lume do the filtering safely #}
+  {% set posts = search.pages("url^=/blogs/") | rejectattr("url", "equalto", "/blogs/") %}
 
-  {% if ns.posts.length %}
+  {% if posts.length %}
     <ul class="blogs-list">
-      {% for p in ns.posts %}
+      {% for p in posts %}
         <li class="blogs-item">
           <a class="blogs-link" href="{{ p.url }}">
             <span class="blogs-title">{{ p.title }}</span>
