@@ -2,14 +2,14 @@ title: Portfolio — Kieran Rimmer
 main_menu: portfolio
 layout: layouts/portfolio.njk
 
-description: >
+description: |
   Senior backend engineer and solution architect specialising in distributed systems,
   large-scale query engines, and AI-assisted observability and active monitoring.
   Available for senior roles and selective consulting engagements.
 
 sections:
   - heading: stackql — Large-scale Query Engine for Cloud & SaaS APIs
-    body: >
+    body: |
       **stackql** is an open-source query engine that treats cloud, SaaS, and other APIs
       as relational data sources, enabling analytics, automation, and AI-driven
       monitoring using SQL.
@@ -30,7 +30,7 @@ sections:
         alt: stackql logo
 
   - heading: stackql + AI — Enterprise Operations Manager (White Paper)
-    body: >
+    body: |
       The **AI Enterprise Operations Manager** extends stackql with an agent-based
       cognition loop (**plan → execute → summarise**) for monitoring and operational
       workflows in cloud-native environments.
@@ -42,7 +42,7 @@ sections:
         href: /generic-stackql-ai-cloud-architecture.pdf
 
   - heading: Public Speaking — Google DevFest Kathmandu 2025
-    body: >
+    body: |
       I was invited to present at
       [DevFest Kathmandu 2025](https://gdg.community.dev/events/details/google-gdg-kathmandu-presents-devfest-kathmandu-2025/),
       where I spoke on **stackql fundamentals** and **AI use cases** in the context of
@@ -55,7 +55,7 @@ sections:
         href: /submission-01-stackql-Kathmandu-DevFest-2025.pdf
 
   - heading: How I Help Teams
-    body: >
+    body: |
       I help teams design, build, and operate complex backend systems, particularly where
       correctness, scale, and operational clarity matter.
 
@@ -65,7 +65,7 @@ sections:
         - Prototyping and productionising AI-assisted workflows
 
   - heading: What I’m Looking For
-    body: >
+    body: |
       **Roles**  
       Senior / Staff backend, platform, or infrastructure roles focused on
       systems-level problem solving and long-term maintainability.
