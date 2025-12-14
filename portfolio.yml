@@ -7,8 +7,27 @@ description: |
   Senior backend engineer and solution architect specialising in distributed systems,
   large-scale query engines, and AI-assisted observability and active monitoring.
   Available for senior roles and selective consulting engagements.
+  **[Contact me](/contact/)**
 
 sections:
+
+  - heading: stackql + AI — Enterprise Operations Manager (White Paper)
+    body: |
+      The **AI Enterprise Operations Manager** extends stackql with an agent-based
+      cognition loop (**plan → execute → summarise**) for monitoring and operational
+      workflows in cloud-native environments.
+
+      The paper outlines system architecture, agent control flow, and integration
+      points for reliability and operational insight.
+    links:
+      - label: Architecture white paper (PDF)
+        href: /generic-stackql-ai-cloud-architecture.pdf
+    images:
+      - label: stackql AI architecture
+        src: /crude-design-figure.png
+        maxWidth: 700px
+        alt: stackql AI architecture
+
   - heading: stackql — Large-scale Query Engine for Cloud & SaaS APIs
     body: |
       **stackql** is an open-source query engine that treats cloud, SaaS, and other APIs
@@ -25,28 +44,6 @@ sections:
         href: https://github.com/stackql
       - label: Documentation
         href: https://stackql.io
-    images:
-      - label: stackql
-        src: /stackql-avatar-logo.png
-        maxWidth: 200px
-        alt: stackql logo
-
-  - heading: stackql + AI — Enterprise Operations Manager (White Paper)
-    body: |
-      The **AI Enterprise Operations Manager** extends stackql with an agent-based
-      cognition loop (**plan → execute → summarise**) for monitoring and operational
-      workflows in cloud-native environments.
-
-      The paper outlines system architecture, agent control flow, and integration
-      points for reliability and operational insight.
-    links:
-      - label: Architecture white paper (PDF)
-        href: /generic-stackql-ai-cloud-architecture.pdf
-    images:
-      - label: stackql AI architecture
-        src: /crude-design-figure.png
-        maxWidth: 600px
-        alt: stackql AI architecture
 
   - heading: Public Speaking — Google DevFest Kathmandu 2025
     body: |
@@ -63,11 +60,11 @@ sections:
     images:
       - label: stackql in Kathmandu
         src: /kathmandu_skyline.jpg
-        maxWidth: 200px
+        maxWidth: 250px
         alt: stackql in Kathmandu
       - label: stackql in Nepal
         src: /nepal_country.jpg
-        maxWidth: 200px
+        maxWidth: 250px
         alt: stackql in Nepal
 
   - heading: How I Help Teams
