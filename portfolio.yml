@@ -58,14 +58,14 @@ sections:
       - label: Presentation Slides (PDF)
         href: /submission-01-stackql-Kathmandu-DevFest-2025.pdf
     images:
-      - label: stackql in Kathmandu
-        src: /kathmandu_skyline.jpg
+      - label: stackql in Kathmandu (courtesy GDG Kathmandu)
+        src: /speaker_action.jpg
         maxWidth: 250px
-        alt: stackql in Kathmandu
-      - label: stackql in Nepal
-        src: /nepal_country.jpg
+        alt: stackql in Kathmandu (courtesy GDG Kathmandu)
+      - label: stackql vision in Nepal
+        src: /mountain_vision.jpg
         maxWidth: 250px
-        alt: stackql in Nepal
+        alt: stackql vision in Nepal
 
   - heading: How I Help Teams
     body: |
