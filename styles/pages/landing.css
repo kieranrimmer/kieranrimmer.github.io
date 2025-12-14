@@ -53,6 +53,10 @@
   text-align: center;
 }
 
+.landing-gallery h2 {
+  text-align: center;
+}
+
 .landing-blurb {
   max-width: 42em;
   margin: 0 auto var(--row-gap-1);

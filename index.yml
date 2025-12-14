@@ -3,14 +3,14 @@ title: Kieran Rimmer
 url: /
 page_css: landing.css
 
-blurb: |
-  ## About me
+blurb:
+  title: About Me
+  body: |
+    I'm a founder, CTO and general software enthusiast, specialising in distributed systems,
+    large-scale query engines, and AI-assisted observability.
+    **[Contact me](/contact/)**
 
-  I'm a founder, CTO and general software enthusiast, specialising in distributed systems,
-  large-scale query engines, and AI-assisted observability.
-  **[Contact me](/contact/)**
-
-  From time to time, I will blog about mostly tech stuff, often centreing on [**stackql**](https://github.com/stackql/stackql).
+    From time to time, I will blog about mostly tech stuff, often centreing on [**stackql**](https://github.com/stackql/stackql).
 
 
 gallery:

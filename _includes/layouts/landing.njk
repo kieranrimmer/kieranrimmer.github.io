@@ -5,7 +5,8 @@ page_css: landing.css
 
 {% if blurb %}
 <section class="landing-blurb">
-  {{ blurb | md | safe }}
+  <h2>{{ blurb.title }}</h2>
+  {{ blurb.body | md | safe }}
 </section>
 {% endif %}
 
