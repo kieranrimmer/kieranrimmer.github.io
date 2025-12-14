@@ -17,7 +17,7 @@ page_css: blogs.css
   {# IMPORTANT: use a namespace so assignments persist outside the loop #}
   {% set ns = namespace(posts=[]) %}
   {% for p in all %}
-    {% if p.url and p.url.startsWith("/blogs/") and p.url != "/blogs/" %}
+    {% if p.url is string and p.url.slice(0, 7) == "/blogs/" and p.url != "/blogs/" %}
       {% set ns.posts = ns.posts.concat([p]) %}
     {% endif %}
   {% endfor %}
