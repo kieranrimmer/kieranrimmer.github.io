@@ -120,6 +120,14 @@
   margin: 0;
 }
 
+.portfolio-image.portrait img {
+  max-width: 320px;
+}
+
+.portfolio-image.landscape img {
+  max-width: 600px;
+}
+
 .portfolio-image figure {
   margin: 0;
 }
