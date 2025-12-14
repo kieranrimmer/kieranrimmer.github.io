@@ -2,6 +2,7 @@
 title: Hello, blog
 date: 2025-12-14
 summary: First post. Replace me.
+type: blog
 ---
 
 This is a sample post to prove the pipeline works.
