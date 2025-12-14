@@ -51,10 +51,14 @@
 
 .landing-gallery h2 {
   text-align: center;
+  color: var(--color-primary);
+  font: var(--text-body);
 }
 
 .landing-blurb h2 {
   text-align: center;
+  color: var(--color-primary);
+  font: var(--text-body);
 }
 
 .landing-blurb {
@@ -64,6 +68,7 @@
   font: var(--text-body);
   color: var(--color-foreground-1);
 }
+
 
 .landing-blurb {
   grid-column: 2;
