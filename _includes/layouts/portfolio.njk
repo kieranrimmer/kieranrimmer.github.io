@@ -32,6 +32,7 @@ page_css: portfolio.css
               src="{{ img.src }}"
               alt="{{ img.alt or img.label }}"
               loading="lazy"
+              style="{% if img.maxWidth %}max-width: {{ img.maxWidth }};{% endif %}{% if img.maxHeight %}max-height: {{ img.maxHeight }};{% endif %}"
             >
             {% if img.label %}
               <figcaption>{{ img.label }}</figcaption>

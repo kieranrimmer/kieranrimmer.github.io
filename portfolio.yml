@@ -26,6 +26,7 @@ sections:
     images:
       - label: stackql
         src: /stackql-avatar-logo.png
+        maxWidth: 150px
         alt: stackql logo
 
   - heading: White Paper - stackql + AI — Enterprise Operations Manager
@@ -48,6 +49,12 @@ sections:
 
   - heading: What I’m Looking For
     body: >
-      Senior roles focused on infrastructure,
-      data platforms, and developer tooling—especially where reliability,
+      Senior roles focused on any of: 
+      
+        - application delivery.
+        - infrastructure,
+        - data platforms.
+        - shared tooling.
+        
+      Especially where reliability,
       scale, and operational clarity matter.

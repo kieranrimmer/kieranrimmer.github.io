@@ -132,8 +132,10 @@
 }
 
 .portfolio-image figcaption {
-  margin-top: 0.4em;
-  font: var(--text-body);
-  letter-spacing: var(--text-body-spacing);
-  color: var(--color-foreground-1);
+  margin-top: 0.35em;
+  font: var(--text-caption, var(--text-body));
+  font-size: 0.85em;
+  letter-spacing: 0.02em;
+  color: var(--color-foreground-2);
+  text-align: center;
 }
