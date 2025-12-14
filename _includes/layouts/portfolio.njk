@@ -7,7 +7,7 @@ layout: layouts/base.njk
     <h1>{{ title }}</h1>
 
     {% if description %}
-      <div class="prose">
+      <div class="page-content prose">
         {{ description | md | safe }}
       </div>
     {% endif %}
@@ -18,7 +18,7 @@ layout: layouts/base.njk
       <section class="portfolio-section">
         <h2>{{ section.heading }}</h2>
 
-        <div class="portfolio-content">
+        <div class="page-content portfolio-content">
           {% if section.body %}
             <div class="portfolio-body prose">
               {{ section.body | md | safe }}
