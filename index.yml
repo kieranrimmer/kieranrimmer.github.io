@@ -4,7 +4,7 @@ url: /
 page_css: landing.css
 
 gallery:
-  title: Selected work
+  title: Highlights
   items:
     - src: /mountain_vision.jpg
       alt: an overview of my portfolio
