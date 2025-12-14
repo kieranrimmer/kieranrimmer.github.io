@@ -14,11 +14,14 @@ page_css: landing.css
     <li class="landing-gallery-item{% if item.orientation %} is-{{ item.orientation }}{% endif %}">
       {% if item.href %}<a class="landing-gallery-link" href="{{ item.href }}">{% endif %}
         <figure
-          class="landing-gallery-figure"
-          {% if item.maxWidth %}
-            style="max-width: {{ item.maxWidth }};"
-          {% endif %}
-        >
+        class="landing-gallery-figure"
+        {% if item.maxWidth or item.maxHeight %}
+          style="
+            {% if item.maxWidth %}max-width: {{ item.maxWidth }};{% endif %}
+            {% if item.maxHeight %}max-height: {{ item.maxHeight }};{% endif %}
+          "
+        {% endif %}
+      >
           <img src="{{ item.src }}" alt="{{ item.alt or '' }}" loading="lazy">
           {% if item.caption %}
           <figcaption class="landing-gallery-caption">{{ item.caption }}</figcaption>

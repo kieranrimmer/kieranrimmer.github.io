@@ -10,10 +10,10 @@ gallery:
       alt: an overview of my portfolio
       caption: an overview of my portfolio
       href: /portfolio/
-      maxWidth: 1000px
+      maxHeight: 270px
       orientation: landscape
     - src: /stackql-avatar-logo.png
       alt: stackql - a labour of love
       caption: stackql - a labour of love
-      maxWidth: 300px
+      maxHeight: 270px
       href: https://stackql.io
