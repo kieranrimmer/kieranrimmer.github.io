@@ -4,7 +4,9 @@ url: /
 page_css: landing.css
 
 blurb: |
-  Senior backend engineer and solution architect specialising in distributed systems,
+  ## About me
+
+  I'm a founder, CTO and general software enthusiast, specialising in distributed systems,
   large-scale query engines, and AI-assisted observability.
   **[Contact me](/contact/)**
 
