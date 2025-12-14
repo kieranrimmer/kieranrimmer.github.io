@@ -60,12 +60,10 @@ sections:
     images:
       - label: stackql in Kathmandu (courtesy GDG Kathmandu)
         src: /speaker_action.jpg
-        maxWidth: 250px
         alt: stackql in Kathmandu (courtesy GDG Kathmandu)
         orientation: portrait
       - label: stackql vision in Nepal
         src: /mountain_vision.jpg
-        maxWidth: 250px
         alt: stackql vision in Nepal
         orientation: landscape
 
