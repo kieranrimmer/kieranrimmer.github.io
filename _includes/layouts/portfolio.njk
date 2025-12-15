@@ -5,7 +5,7 @@ page_css: portfolio.css
 
 <article class="portfolio">
   <header class="portfolio-header">
-    <h1>{{ title | nl2br }}</h1>
+    <h1>{{ title  | nl2br | safe }}</h1>
 
     {% if description %}
       <p>
