@@ -1,4 +1,6 @@
-title: Portfolio — <br/> Kieran Rimmer
+title: |
+  Portfolio —
+  Kieran Rimmer
 main_menu: portfolio
 url: /portfolio/
 layout: layouts/portfolio.njk
