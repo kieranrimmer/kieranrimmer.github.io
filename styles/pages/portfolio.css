@@ -25,6 +25,7 @@
     text-align: center;
     color: var(--color-primary);
     margin: 0;
+    white-space: pre-wrap;
   }
 
   & p {
